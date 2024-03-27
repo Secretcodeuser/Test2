@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test 2</title>
+</head>
+<body>
+    <h1>Test 2</h1>
+
+    <div class="paper1">
+        <h1>who is the giant one</h1>
+
+        <button onclick="check()"><img src="https://th.bing.com/th/id/OIP.lNgpqGl16U0ft3rS8TdFcgEsEe" alt=""></button>
+        <br>
+        <button onclick="check2()"><img src="https://th.bing.com/th/id/OIP.lEQs1pAnsSRTqLttQHtYHwHaEK" alt=""></button>
+        <br>
+        <p id="check"></p>
+    </div>
+
+
+
+    <div class="send">
+        <button onclick="send()">send</button>
+        <br>
+        <p id="sended"></p>
+    </div>
+
+
+
+
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: aqua;
+        }
+
+
+
+        .paper1{
+            background-color: orange;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .send{
+background-color: blueviolet;
+border-radius: 20px;
+        }
+    </style>
+
+
+<script>
+    function check(){
+        document.getElementById('check').innerHTML = "Correct!";
+    }
+
+    function check2(){
+        document.getElementById('check').innerHTML = "Incorrect";
+    }
+
+
+    function send(){
+        document.getElementById('sended').innerHTML = "Sended";
+    }
+</script>
+</body>
+</html>
